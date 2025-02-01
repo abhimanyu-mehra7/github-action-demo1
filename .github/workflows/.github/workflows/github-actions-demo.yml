@@ -1,0 +1,16 @@
+name: GitHub Action Test
+
+on:
+  push:
+    branches:
+      - main  # Change to your default branch if it's different
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 24ds2000003@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
